@@ -1,0 +1,29 @@
+{
+  "name": "online-pharmacy-shopping-cart",
+  "version": "1.0.0",
+  "description": "Shopping cart for Xtrude Design",
+  "main": "server.js",
+  "scripts": {
+    "start": "node BackEnd/server.js",
+    "server": "nodemon BackEnd/server.js",
+    "client": "npm start --prefix FrontEnd",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "import": "node BackEnd/seederScript.js"
+  },
+  "author": "Denura Mudalige",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "jspdf": "^2.5.1",
+    "jspdf-autotable": "^3.5.23",
+    "mongodb": "^4.6.0",
+    "mongoose": "^6.2.10",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "concurrently": "^7.1.0",
+    "nodemon": "^2.0.15"
+  }
+}
